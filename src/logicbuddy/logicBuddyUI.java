@@ -14,11 +14,12 @@ import java.net.URI;
 import javax.swing.JLabel;
 /**
  *
- * @author harryn
+ * @author Harry Nisbet
+ * @ver 1.0.3
  */
 public class logicBuddyUI extends javax.swing.JFrame
 {
-private  String ver = "1.0.2";
+private  String ver = "1.0.3";
 URI applicationAddress;
 //"http://www.microsun.co.uk";
 
