@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-//Ver 1.0.2
+
 
 package logicbuddy;
 import java.awt.Color;
@@ -15,11 +15,11 @@ import javax.swing.JLabel;
 /**
  *
  * @author Harry Nisbet
- * @ver 1.0.3
+ * @ver 1.0.3a
  */
 public class logicBuddyUI extends javax.swing.JFrame
 {
-private  String ver = "1.0.3";
+private  String ver = "1.0.4r";
 URI applicationAddress;
 //"http://www.microsun.co.uk";
 

@@ -7,7 +7,7 @@ package logicbuddy;
 
 /**
  *
- * @author harryn
+ * @author Harry Nisbet
  */
 public class LogicBuddy
 {
