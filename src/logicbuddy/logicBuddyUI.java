@@ -19,7 +19,7 @@ import javax.swing.JLabel;
  */
 public class logicBuddyUI extends javax.swing.JFrame
 {
-private  String ver = "1.0.4r";
+private  String ver = "1.0.5";
 URI applicationAddress;
 //"http://www.microsun.co.uk";
 
@@ -71,6 +71,7 @@ URI applicationAddress;
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -248,6 +249,15 @@ URI applicationAddress;
         jLabel16.setText("X");
         jLabel16.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        jCheckBox1.setText("Keep on top");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -256,7 +266,7 @@ URI applicationAddress;
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -280,8 +290,7 @@ URI applicationAddress;
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel12)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel13)
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                .addComponent(jLabel13))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addGap(18, 18, 18)
@@ -293,12 +302,14 @@ URI applicationAddress;
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel5)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(73, 73, 73)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32)))
+                                .addComponent(jLabel6)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jCheckBox1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -323,7 +334,9 @@ URI applicationAddress;
                             .addComponent(jLabel12)
                             .addComponent(jLabel13)))
                     .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jCheckBox1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -508,6 +521,19 @@ clipboard.setContents(stringSelection, null);
         // TODO add your handling code here:
         jLabel15.setForeground(Color.BLACK);
     }//GEN-LAST:event_jLabel15MouseExited
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jCheckBox1ActionPerformed
+    {//GEN-HEADEREND:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+        if (jCheckBox1.isSelected())
+        {
+            this.setAlwaysOnTop(true);
+        }
+        else
+        {
+           this.setAlwaysOnTop(false); 
+        }
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
 private void openBrowser()
 {
   try
@@ -566,6 +592,7 @@ private void openBrowser()
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton4;
+    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
