@@ -15,13 +15,13 @@ import javax.swing.JLabel;
 /**
  *
  * @author Harry Nisbet
- * @ver 1.0.3a
+ * @ver 1.0.6
  */
 public class logicBuddyUI extends javax.swing.JFrame
 {
-private  String ver = "1.0.5";
+private  String ver = "1.0.6";
 URI applicationAddress;
-//"http://www.microsun.co.uk";
+//"http://www.microsun.co.uk/system/software/logicbuddy";
 
 
     /**
@@ -35,7 +35,7 @@ URI applicationAddress;
         jLabel16.setText("");
         try
         {
-          applicationAddress=new URI("http://www.microsun.co.uk");  
+          applicationAddress=new URI("http://www.microsun.co.uk/system/software/logicbuddy");  
         } catch (Exception e)
         {
         }
@@ -370,18 +370,140 @@ URI applicationAddress;
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton4ActionPerformed
-    {//GEN-HEADEREND:event_jButton4ActionPerformed
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jCheckBox1ActionPerformed
+    {//GEN-HEADEREND:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
-        
-    }//GEN-LAST:event_jButton4ActionPerformed
+        if (jCheckBox1.isSelected())
+        {
+            this.setAlwaysOnTop(true);
+        }
+        else
+        {
+            this.setAlwaysOnTop(false);
+        }
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jLabel15MouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel15MouseExited
+    {//GEN-HEADEREND:event_jLabel15MouseExited
+        // TODO add your handling code here:
+        jLabel15.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jLabel15MouseExited
+
+    private void jLabel15MouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel15MouseEntered
+    {//GEN-HEADEREND:event_jLabel15MouseEntered
+        // TODO add your handling code here:
+        jLabel15.setForeground(Color.blue);
+    }//GEN-LAST:event_jLabel15MouseEntered
+
+    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel15MouseClicked
+    {//GEN-HEADEREND:event_jLabel15MouseClicked
+        // TODO add your handling code here:
+        openBrowser();
+    }//GEN-LAST:event_jLabel15MouseClicked
+
+    private void jLabel14MouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel14MouseExited
+    {//GEN-HEADEREND:event_jLabel14MouseExited
+        // TODO add your handling code here:
+        jLabel14.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jLabel14MouseExited
+
+    private void jLabel14MouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel14MouseEntered
+    {//GEN-HEADEREND:event_jLabel14MouseEntered
+        // TODO add your handling code here:
+        jLabel14.setForeground(Color.blue);
+    }//GEN-LAST:event_jLabel14MouseEntered
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel14MouseClicked
+    {//GEN-HEADEREND:event_jLabel14MouseClicked
+        // TODO add your handling code here:
+        openBrowser();
+
+    }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel13MouseClicked
+    {//GEN-HEADEREND:event_jLabel13MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel13, "Set Intersection");//\n The intersection of two sets\n is the set of elements which are common members of each of the two sets..");
+    }//GEN-LAST:event_jLabel13MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel12MouseClicked
+    {//GEN-HEADEREND:event_jLabel12MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel12, "Set Union");// The union of two sets is a set containing all the members of those two sets (and no other members).");
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel11MouseClicked
+    {//GEN-HEADEREND:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel11, "Empty Set.");
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel10MouseClicked
+    {//GEN-HEADEREND:event_jLabel10MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel10, "Proper Subset");// is contained in, A ⊆ B AND A is NOT equal to B");
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel9MouseClicked
+    {//GEN-HEADEREND:event_jLabel9MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel9, "Subset");// is contained in, A ⊆ B AND A is equal to B");
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel8MouseClicked
+    {//GEN-HEADEREND:event_jLabel8MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel8, "Membership; is NOT an element of.");
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel7MouseClicked
+    {//GEN-HEADEREND:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel7, "Membership; is an element of.");
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel6MouseClicked
+    {//GEN-HEADEREND:event_jLabel6MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel6, "Existential Quantification");// There exists.");
+    }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel5MouseClicked
+    {//GEN-HEADEREND:event_jLabel5MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel5, "Universal Quantification");// For all, For any, For each.");
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel4MouseClicked
+    {//GEN-HEADEREND:event_jLabel4MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel4, "Implies; IF...THEN.");
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel3MouseClicked
+    {//GEN-HEADEREND:event_jLabel3MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel3, "Negation, NOT.");
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel2MouseClicked
+    {//GEN-HEADEREND:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+        doLabelActions(jLabel2, "Logical Disjunction (inclusive), OR.");
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel1MouseClicked
     {//GEN-HEADEREND:event_jLabel1MouseClicked
         // TODO add your handling code here:
-        doLabelActions(jLabel1, "Logical Conjunction, AND.");    
+        doLabelActions(jLabel1, "Logical Conjunction, AND.");
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton4ActionPerformed
+    {//GEN-HEADEREND:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+
+    }//GEN-LAST:event_jButton4ActionPerformed
 private void doLabelActions(JLabel lbl, String description)
 {
     removeLabelBorders();
@@ -412,129 +534,7 @@ clipboard.setContents(stringSelection, null);
    jLabel11.setBorder(javax.swing.BorderFactory.createEmptyBorder()); 
    jLabel12.setBorder(javax.swing.BorderFactory.createEmptyBorder()); 
    jLabel13.setBorder(javax.swing.BorderFactory.createEmptyBorder()); 
-}
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel2MouseClicked
-    {//GEN-HEADEREND:event_jLabel2MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel2, "Logical Disjunction (inclusive), OR.");
-    }//GEN-LAST:event_jLabel2MouseClicked
-
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel3MouseClicked
-    {//GEN-HEADEREND:event_jLabel3MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel3, "Negation, NOT.");
-    }//GEN-LAST:event_jLabel3MouseClicked
-
-    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel4MouseClicked
-    {//GEN-HEADEREND:event_jLabel4MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel4, "Implies; IF...THEN.");
-    }//GEN-LAST:event_jLabel4MouseClicked
-
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel5MouseClicked
-    {//GEN-HEADEREND:event_jLabel5MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel5, "Universal Quantification; For all, For any, For each.");
-    }//GEN-LAST:event_jLabel5MouseClicked
-
-    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel6MouseClicked
-    {//GEN-HEADEREND:event_jLabel6MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel6, "Existential Quantification; There exists.");
-    }//GEN-LAST:event_jLabel6MouseClicked
-
-    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel7MouseClicked
-    {//GEN-HEADEREND:event_jLabel7MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel7, "Membership; is an element of.");
-    }//GEN-LAST:event_jLabel7MouseClicked
-
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel8MouseClicked
-    {//GEN-HEADEREND:event_jLabel8MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel8, "Membership; is NOT an element of");
-    }//GEN-LAST:event_jLabel8MouseClicked
-
-    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel9MouseClicked
-    {//GEN-HEADEREND:event_jLabel9MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel9, "Subset; is contained in, A ⊆ B AND A is equal to B");
-    }//GEN-LAST:event_jLabel9MouseClicked
-
-    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel10MouseClicked
-    {//GEN-HEADEREND:event_jLabel10MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel10, "Proper Subset; is contained in, A ⊆ B AND A is NOT equal to B");
-    }//GEN-LAST:event_jLabel10MouseClicked
-
-    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel11MouseClicked
-    {//GEN-HEADEREND:event_jLabel11MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel11, "Empty Set.");
-    }//GEN-LAST:event_jLabel11MouseClicked
-
-    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel12MouseClicked
-    {//GEN-HEADEREND:event_jLabel12MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel12, "Set Union; The union of two sets is a set containing all the members of those two sets (and no other members).");
-    }//GEN-LAST:event_jLabel12MouseClicked
-
-    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel13MouseClicked
-    {//GEN-HEADEREND:event_jLabel13MouseClicked
-        // TODO add your handling code here:
-        doLabelActions(jLabel13, "Set Intersection; The intersection of two sets is the set of elements which are common members of each of the two sets..");
-    }//GEN-LAST:event_jLabel13MouseClicked
-
-    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel14MouseClicked
-    {//GEN-HEADEREND:event_jLabel14MouseClicked
-        // TODO add your handling code here:
-        openBrowser();
-        
-    }//GEN-LAST:event_jLabel14MouseClicked
-
-    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel15MouseClicked
-    {//GEN-HEADEREND:event_jLabel15MouseClicked
-        // TODO add your handling code here:
-        openBrowser();
-    }//GEN-LAST:event_jLabel15MouseClicked
-
-    private void jLabel14MouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel14MouseEntered
-    {//GEN-HEADEREND:event_jLabel14MouseEntered
-        // TODO add your handling code here:
-        jLabel14.setForeground(Color.blue);
-    }//GEN-LAST:event_jLabel14MouseEntered
-
-    private void jLabel14MouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel14MouseExited
-    {//GEN-HEADEREND:event_jLabel14MouseExited
-        // TODO add your handling code here:
-        jLabel14.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jLabel14MouseExited
-
-    private void jLabel15MouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel15MouseEntered
-    {//GEN-HEADEREND:event_jLabel15MouseEntered
-        // TODO add your handling code here:
-        jLabel15.setForeground(Color.blue);
-    }//GEN-LAST:event_jLabel15MouseEntered
-
-    private void jLabel15MouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel15MouseExited
-    {//GEN-HEADEREND:event_jLabel15MouseExited
-        // TODO add your handling code here:
-        jLabel15.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jLabel15MouseExited
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jCheckBox1ActionPerformed
-    {//GEN-HEADEREND:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-        if (jCheckBox1.isSelected())
-        {
-            this.setAlwaysOnTop(true);
-        }
-        else
-        {
-           this.setAlwaysOnTop(false); 
-        }
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
-private void openBrowser()
+}private void openBrowser()
 {
   try
         {
